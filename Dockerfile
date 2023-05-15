@@ -18,5 +18,7 @@ COPY books.py .
 # Expose the port on which the Flask API will run
 EXPOSE 5000
 
+USER 10014
+
 # Set the entrypoint command to run the Flask API
 CMD ["python", "books.py"]
